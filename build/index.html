@@ -1,245 +1,635 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>learnobook</title>
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-</head>
-<body class=" tracking-wider">
-   <header class="bg-black ">
-    <nav class="justify-between flex items-center px-7 py-5 lg:px-20 bg-white shadow-xl" >
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body class="tracking-wider">
+    <header class="bg-black">
+      <nav
+        class="justify-between flex items-center px-7 py-5 lg:px-20 bg-white shadow-xl"
+      >
         <div>
-            <h1 class="text-[#137ff3] font-bold text-3xl">Learnobox</h1>
+          <h1 class="text-[#137ff3] font-bold text-3xl">Learnobox</h1>
         </div>
         <div class="hidden lg:flex justify-center gap-[4vw] items-center">
-            <ul class=" flex items-center gap-9 font-semibold text-3xl">
-                <li><a href="">Home</a></li>
-                <li><a href="">Courses</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact us</a></li>
-            </ul>
-            <div class="flex item-center justify-center">
-                <button class="bg-[#137ff3] px-4 py-1 rounded-[0.9vw] text-white font-bold items-center text-[1.5vw]">Login</button>
-            </div>
+          <ul class="flex items-center gap-9 font-semibold text-3xl">
+            <li><a href="">Home</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+          <div class="flex item-center justify-center">
+            <button
+              class="bg-[#137ff3] px-4 py-1 rounded-[0.9vw] text-white font-bold items-center text-[1.5vw]"
+            >
+              Login
+            </button>
+          </div>
         </div>
         <!--  mobile  -->
         <div id="hamburger" class="lg:hidden flex item-center cursor-pointer">
-            <svg class=" bar h-[10vw] z-50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19 12.75H5C4.80109 12.75 4.61032 12.671 4.46967 12.5303C4.32902 12.3897 4.25 12.1989 4.25 12C4.25 11.8011 4.32902 11.6103 4.46967 11.4697C4.61032 11.329 4.80109 11.25 5 11.25H19C19.1989 11.25 19.3897 11.329 19.5303 11.4697C19.671 11.6103 19.75 11.8011 19.75 12C19.75 12.1989 19.671 12.3897 19.5303 12.5303C19.3897 12.671 19.1989 12.75 19 12.75Z" fill="#000000"></path> <path d="M19 8.25H5C4.80109 8.25 4.61032 8.17098 4.46967 8.03033C4.32902 7.88968 4.25 7.69891 4.25 7.5C4.25 7.30109 4.32902 7.11032 4.46967 6.96967C4.61032 6.82902 4.80109 6.75 5 6.75H19C19.1989 6.75 19.3897 6.82902 19.5303 6.96967C19.671 7.11032 19.75 7.30109 19.75 7.5C19.75 7.69891 19.671 7.88968 19.5303 8.03033C19.3897 8.17098 19.1989 8.25 19 8.25Z" fill="#000000"></path> <path d="M19 17.25H5C4.80109 17.25 4.61032 17.171 4.46967 17.0303C4.32902 16.8897 4.25 16.6989 4.25 16.5C4.25 16.3011 4.32902 16.1103 4.46967 15.9697C4.61032 15.829 4.80109 15.75 5 15.75H19C19.1989 15.75 19.3897 15.829 19.5303 15.9697C19.671 16.1103 19.75 16.3011 19.75 16.5C19.75 16.6989 19.671 16.8897 19.5303 17.0303C19.3897 17.171 19.1989 17.25 19 17.25Z" fill="#000000"></path> </g></svg>
-            <svg class="close h-[6vw] sm:h-[4vw] sm:px-10 z-50 hidden" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Menu / Close_LG"> <path id="Vector" d="M21 21L12 12M12 12L3 3M12 12L21.0001 3M12 12L3 21.0001" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+          <svg
+            class="bar h-[10vw] z-50"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M19 12.75H5C4.80109 12.75 4.61032 12.671 4.46967 12.5303C4.32902 12.3897 4.25 12.1989 4.25 12C4.25 11.8011 4.32902 11.6103 4.46967 11.4697C4.61032 11.329 4.80109 11.25 5 11.25H19C19.1989 11.25 19.3897 11.329 19.5303 11.4697C19.671 11.6103 19.75 11.8011 19.75 12C19.75 12.1989 19.671 12.3897 19.5303 12.5303C19.3897 12.671 19.1989 12.75 19 12.75Z"
+                fill="#000000"
+              ></path>
+              <path
+                d="M19 8.25H5C4.80109 8.25 4.61032 8.17098 4.46967 8.03033C4.32902 7.88968 4.25 7.69891 4.25 7.5C4.25 7.30109 4.32902 7.11032 4.46967 6.96967C4.61032 6.82902 4.80109 6.75 5 6.75H19C19.1989 6.75 19.3897 6.82902 19.5303 6.96967C19.671 7.11032 19.75 7.30109 19.75 7.5C19.75 7.69891 19.671 7.88968 19.5303 8.03033C19.3897 8.17098 19.1989 8.25 19 8.25Z"
+                fill="#000000"
+              ></path>
+              <path
+                d="M19 17.25H5C4.80109 17.25 4.61032 17.171 4.46967 17.0303C4.32902 16.8897 4.25 16.6989 4.25 16.5C4.25 16.3011 4.32902 16.1103 4.46967 15.9697C4.61032 15.829 4.80109 15.75 5 15.75H19C19.1989 15.75 19.3897 15.829 19.5303 15.9697C19.671 16.1103 19.75 16.3011 19.75 16.5C19.75 16.6989 19.671 16.8897 19.5303 17.0303C19.3897 17.171 19.1989 17.25 19 17.25Z"
+                fill="#000000"
+              ></path>
+            </g>
+          </svg>
+          <svg
+            class="close h-[6vw] sm:h-[4vw] sm:px-10 z-50 hidden"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g id="Menu / Close_LG">
+                <path
+                  id="Vector"
+                  d="M21 21L12 12M12 12L3 3M12 12L21.0001 3M12 12L3 21.0001"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </g>
+          </svg>
         </div>
-        <div id="menu" class="hidden absolute  bg-white h-[100vh] inset-0">
-            <ul class=" flex flex-col justify-center space-y-10  spa h-full py-20 gap-y-2 place-items-center text-black text-2xl">
-                <li><a href="">Home</a></li>
-                <li><a href="">Courses</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Contact us</a></li>
-                <li><button  class="flex bg-[#137ff3] px-5 py-2  rounded-[0.9vw] text-white font-bold items-center text-3xl">Login</button></li>
-            </ul>
+        <div id="menu" class="hidden absolute bg-white h-[100vh] inset-0">
+          <ul
+            class="flex flex-col justify-center space-y-10 spa h-full py-20 gap-y-2 place-items-center text-black text-2xl"
+          >
+            <li><a href="">Home</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact us</a></li>
+            <li>
+              <button
+                class="flex bg-[#137ff3] px-5 py-2 rounded-[0.9vw] text-white font-bold items-center text-3xl"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
         </div>
-    </nav>
-
-   </header> 
-   <main>
-    <section id="menu">
+      </nav>
+    </header>
+    <main>
+      <section id="menu">
         <div class="">
-            <div class=" bg-[#137ff3] flex flex-row items-center justify-around text-white lg:px-20 md:px-10 sm:px-10 sm:py-10">
-                <div class=" mb-12 md:text-left md:w-1/2 md:pr-10 gap-10 flex flex-col sm:px-5" >
-                    <h2 class="text-2xl font-bold">WELCOME TO LEARNOBOOK</h2>
-                    <p class="text-4xl ">Bridging Dreams to Careers for All Aspiring Learners</p>
-                    <h3>Master a high-demand skill through optimal learning approaches</h3>
-                    <div>
-                        <button class="bg-black text-white px-5 py-2 rounded-full capitalize font-bold  my-5">register now</button>
-                    </div>
-                </div>
-                <div>
-                    <img class="hidden lg:flex " src="./assets/img/Happy_mulatto_man_holding_a_laptop_i-removebg-preview 1.png" alt="">
-                </div>
+          <div
+            class="bg-[#137ff3] flex flex-row items-center justify-around text-white lg:px-20 md:px-10 sm:px-10 sm:py-10"
+          >
+            <div
+              class="mb-12 md:text-left md:w-1/2 md:pr-10 gap-10 flex flex-col sm:px-5"
+            >
+              <h2 class="text-2xl font-bold">WELCOME TO LEARNOBOOK</h2>
+              <p class="text-4xl">
+                Bridging Dreams to Careers for All Aspiring Learners
+              </p>
+              <h3>
+                Master a high-demand skill through optimal learning approaches
+              </h3>
+              <div>
+                <button
+                  class="bg-black text-white px-5 py-2 rounded-full capitalize font-bold my-5"
+                >
+                  register now
+                </button>
+              </div>
             </div>
+            <div>
+              <img
+                class="hidden lg:flex"
+                src="./assets/img/Happy_mulatto_man_holding_a_laptop_i-removebg-preview 1.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-    </section>
-    <section id="courses">
-        <div class=" py-20">
-            <div class="text-center m-auto mb-20 md:w-1/2   flex justify-center">
-                <h4 class="text-xl font-bold">Learn Essential Skills To Revolutionize Your Career in the Real World</h4>
+      </section>
+      <section id="courses">
+        <div class="py-20">
+          <div class="text-center m-auto mb-20 md:w-1/2 flex justify-center">
+            <h4 class="text-xl font-bold">
+              Learn Essential Skills To Revolutionize Your Career in the Real
+              World
+            </h4>
+          </div>
+          <div
+            class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8"
+          >
+            <div
+              class="card1 border-2 border-solid border-color-gray flex flex-col items-center bg-[#137ff3] h-100 w-85 gap-8"
+            >
+              <div>
+                <img
+                  class="object-cover w-full"
+                  src="./assets/img/content.png"
+                  alt=""
+                />
+              </div>
+              <h3 class="font-bold mt-3 text-2xl capitalize">
+                content Creation
+              </h3>
+              <p class="text-left px-5 mt-8 text-2xl">
+                curating diverse material, such as articles, videos, and
+                graphics, to engage and inform audiences across various
+                platforms, fostering communication and brand presence.
+              </p>
+              <div class="flex w-full ml-7">
+                <button class="btn">Register now</button>
+              </div>
             </div>
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8 ">
-                <div class="card1 border-2 border-solid border-color-gray flex flex-col items-center bg-[#137ff3] h-100 w-85 gap-8">
-                    <div>
-                        <img class="object-cover w-full" src="./assets/img/content.png" alt="">
-                    </div>
-                    <h3 class="font-bold mt-3 text-2xl capitalize">content Creation</h3>
-                    <p class="text-left px-5 mt-8 text-2xl"> curating diverse material, such as articles, videos, and graphics, to engage and inform audiences across various platforms, fostering communication and brand presence.</p>
-                    <div class="flex w-full ml-7">
-                        <button class="btn">Register now</button>
-                    </div>
-                </div>
-                <div class="card1 border-2 border-solid border-color-gray flex flex-col items-center bg-[#137ff3] h-100 w-85 gap-8">
-                    <div>
-                        <img class="object-cover h-[40]" src="./assets/img/photography.png" alt="">
-                    </div>
-                    <h3 class="font-bold mt-3 text-2xl capitalize">content Creation</h3>
-                    <p class="text-left px-5 mt-8 text-2xl"> Photography captures moments through the
-                        lens, blending art and technique to convey
-                        emotions, stories, and the beauty of the
-                        visual world.</p>
-                    <div class="flex w-full ml-7">
-                        <button class="btn">Register now</button>
-                    </div>
-                </div>
-                <div class="card1 border-2 border-solid border-color-gray flex flex-col items-center bg-[#137ff3] h-100 w-85 gap-8">
-                    <div>
-                        <img class="object-cover h-[40]" src="./assets/img/creative.png" alt="">
-                    </div>
-                    <h3 class="font-bold mt-3 text-2xl capitalize">Creative Graphic Design</h3>
-                    <p class="text-left px-5 mt-8 text-2xl">Creative graphics design involves visually 
-                        communicating ideas through compelling and
-                        aesthetically pleasing images, combining
-                        artistic elements with effective messaging. 
-                        It plays a crucial role in branding, marketing.</p>
-                    <div class="flex w-full ml-7">
-                        <button class="btn">Register no</button>
-                    </div>
-                </div>
-                <div class="w-full">
-                    <button class="btn">more courses</button>
-                </div>
-                
+            <div
+              class="card1 border-2 border-solid border-color-gray flex flex-col items-center bg-[#137ff3] h-100 w-85 gap-8"
+            >
+              <div>
+                <img
+                  class="object-cover h-[40]"
+                  src="./assets/img/photography.png"
+                  alt=""
+                />
+              </div>
+              <h3 class="font-bold mt-3 text-2xl capitalize">
+                content Creation
+              </h3>
+              <p class="text-left px-5 mt-8 text-2xl">
+                Photography captures moments through the lens, blending art and
+                technique to convey emotions, stories, and the beauty of the
+                visual world.
+              </p>
+              <div class="flex w-full ml-7">
+                <button class="btn">Register now</button>
+              </div>
             </div>
+            <div
+              class="card1 border-2 border-solid border-color-gray flex flex-col items-center bg-[#137ff3] h-100 w-85 gap-8"
+            >
+              <div>
+                <img
+                  class="object-cover h-[40]"
+                  src="./assets/img/creative.png"
+                  alt=""
+                />
+              </div>
+              <h3 class="font-bold mt-3 text-2xl capitalize">
+                Creative Graphic Design
+              </h3>
+              <p class="text-left px-5 mt-8 text-2xl">
+                Creative graphics design involves visually communicating ideas
+                through compelling and aesthetically pleasing images, combining
+                artistic elements with effective messaging. It plays a crucial
+                role in branding, marketing.
+              </p>
+              <div class="flex w-full ml-7">
+                <button class="btn">Register no</button>
+              </div>
+            </div>
+            <div class="w-full">
+              <button class="btn">more courses</button>
+            </div>
+          </div>
         </div>
-    </section>
-    <section id="explore">
+      </section>
+      <section id="explore">
         <div class="bg-[#137ff3] py-20 flex flex-col items-center gap-9">
-            <div>
-                <img src="./assets/img/youtube-video-play-function-concept 1.png" alt="">
-            </div>
-            <p class="w-2/3 text-3xl text-justify">"Learnobox offers job-ready skills, personalized mentorship  and direct tech connections. With a focus on excellence,flexible pricing, and expert collaborations, it delivers unmatched value. Transform your aspirations into reality"</p>
-            <div class="bg-black gap-4 rounded-xl text-white py-6 w-80 flex items-center justify-center ">
-                <button class="text-2xl">Explore programmes</button>
-                <svg class="h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-            </div>
+          <div>
+            <img
+              src="./assets/img/youtube-video-play-function-concept 1.png"
+              alt=""
+            />
+          </div>
+          <p class="w-2/3 text-3xl text-justify">
+            "Learnobox offers job-ready skills, personalized mentorship and
+            direct tech connections. With a focus on excellence,flexible
+            pricing, and expert collaborations, it delivers unmatched value.
+            Transform your aspirations into reality"
+          </p>
+          <div
+            class="bg-black gap-4 rounded-xl text-white py-6 w-80 flex items-center justify-center"
+          >
+            <button class="text-2xl">Explore programmes</button>
+            <svg
+              class="h-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#ffffff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M4 12H20M20 12L16 8M20 12L16 16"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </div>
         </div>
-    </section>
-    <section id="about">
+      </section>
+      <section id="about">
         <div class="py-20">
-            <div class="text-center m-auto mb-20 md:w-1/2   flex justify-center">
-                <h3 class="text-4xl font-bold">WHAT MAKES LEARNOBOX THE BEST?</h3>
+          <div class="text-center m-auto mb-20 md:w-1/2 flex justify-center">
+            <h3 class="text-4xl font-bold">WHAT MAKES LEARNOBOX THE BEST?</h3>
+          </div>
+          <div
+            class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8"
+          >
+            <div
+              class="border-2 border-solid border-color-gray flex flex-col items-center h-100 w-85 gap-8 p-20"
+            >
+              <h3 class="font-bold text-5xl">ICON</h3>
+              <p class="text-5xl">TEXT</p>
             </div>
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8 ">
-                <div class="border-2 border-solid border-color-gray flex flex-col items-center h-100 w-85 gap-8 p-20"> 
-                    <h3 class="font-bold text-5xl">ICON</h3>
-                    <p class="text-5xl">TEXT</p>
-                </div>
-                <div class="border-2 border-solid border-color-gray flex flex-col items-center h-100 w-85 gap-8 p-20"> 
-                    <h3 class="font-bold text-5xl">ICON</h3>
-                    <p class="text-5xl">TEXT</p>
-                </div>
-                <div class="border-2 border-solid border-color-gray flex flex-col items-center h-100 w-85 gap-8 p-20"> 
-                    <h3 class="font-bold text-5xl">ICON</h3>
-                    <p class="text-5xl">TEXT</p>
-                </div>
+            <div
+              class="border-2 border-solid border-color-gray flex flex-col items-center h-100 w-85 gap-8 p-20"
+            >
+              <h3 class="font-bold text-5xl">ICON</h3>
+              <p class="text-5xl">TEXT</p>
             </div>
+            <div
+              class="border-2 border-solid border-color-gray flex flex-col items-center h-100 w-85 gap-8 p-20"
+            >
+              <h3 class="font-bold text-5xl">ICON</h3>
+              <p class="text-5xl">TEXT</p>
+            </div>
+          </div>
         </div>
-    </section>
-    <section id="content">
+      </section>
+      <section id="content">
         <div class="bg-[#137ff3] py-10 flex flex-col items-center">
-            <div class="text-center m-auto mb-20 md:w-1/2   flex justify-center">
-                <h3 class="text-4xl font-bold">Exclusive content, exceptional quality</h3>
+          <div class="text-center m-auto mb-20 md:w-1/2 flex justify-center">
+            <h3 class="text-4xl font-bold">
+              Exclusive content, exceptional quality
+            </h3>
+          </div>
+          <div
+            class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 lg:gap-20 px-4 sm:px-6 lg:px-8"
+          >
+            <div
+              class="bg-white rounded-xl h-40 w-60 flex flex-col items-center justify-center"
+            >
+              <h2 class="text-[#137ff3] font-bold text-2xl">120+</h2>
+              <p class="w-full px-3 text-center">
+                Hours of Content (Updating regularly)
+              </p>
             </div>
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 lg:gap-20 px-4 sm:px-6 lg:px-8 ">
-                <div class="bg-white rounded-xl h-40 w-60 flex flex-col items-center justify-center">
-                    <h2 class="text-[#137ff3] font-bold text-2xl">120+</h2>
-                    <p class="w-full px-3 text-center">Hours of Content (Updating regularly)</p>
-                </div>
-                <div class="bg-white rounded-xl h-40 w-60 flex flex-col items-center justify-center">
-                    <h2 class="text-[#137ff3] font-bold text-2xl">50+</h2>
-                    <p class="w-full px-3 text-center">Mentorship and supervision</p>
-                </div>
-                <div class="bg-white rounded-xl h-40 w-60 flex flex-col items-center justify-center">
-                    <h2 class="text-[#137ff3] font-bold text-2xl">100+</h2>
-                    <p class="w-full px-3 text-center">Learner around the world</p>
-                </div>
-                <div class="bg-white rounded-xl h-40 w-60 flex flex-col items-center justify-center">
-                    <h2 class="text-[#137ff3] font-bold text-2xl"><3-4</h2>
-                    <p class="w-full px-3 text-center">Months programmes</p>
-                </div>
+            <div
+              class="bg-white rounded-xl h-40 w-60 flex flex-col items-center justify-center"
+            >
+              <h2 class="text-[#137ff3] font-bold text-2xl">50+</h2>
+              <p class="w-full px-3 text-center">Mentorship and supervision</p>
             </div>
+            <div
+              class="bg-white rounded-xl h-40 w-60 flex flex-col items-center justify-center"
+            >
+              <h2 class="text-[#137ff3] font-bold text-2xl">100+</h2>
+              <p class="w-full px-3 text-center">Learner around the world</p>
+            </div>
+            +
+            <div
+              class="bg-white rounded-xl h-40 w-60 flex flex-col items-center justify-center"
+            >
+              <h2 class="text-[#137ff3] font-bold text-2xl"><3-4</h2>
+              <p class="w-full px-3 text-center">Months programmes</p>
+            </div>
+          </div>
         </div>
-    </section>
-    <section id="partners">
+      </section>
+      <section id="partners">
         <div class="py-20">
-            <div class="text-center m-auto mb-20 md:w-1/2   flex justify-center">
-                <h3 class="text-3xl font-bold">Trusted by over 20 companies and Thousand of Learners around the world</h3>
-            </div>
-            <div class="grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-12 lg:gap-20 px-4 sm:px-6 lg:px-8 place-content-center">
-                <div>
-                    <img src="./assets/logos/DREAMY J 2 1.png" alt="">
-                </div>
-                <div>
-                    <img src="./assets/logos/Untitled50_20230105063916 1.png" alt="">
-                </div>
-                <div>
-                    <img src="./assets/logos/Untitled139_20230808171903 1.png" alt="">
-                </div>
-                <div>
-                    <img src="./assets/logos/Untitled122_20230719132039 1.png" alt="">
-                </div>
-                <div>
-                    <img src="./assets/logos/Black White Elegant Monogram Initial Name Logo 1.png" alt="">
-                </div>
-                <div>
-                    <img src="./assets/logos/dd 1.png" alt="">
-                </div>
-                <div>
-                    <img src="./assets/logos/Untitled12_20231206222211 1.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div  class="bg-[#137ff3] py-10 px-20 flex items-start flex-col gap-10 place-content-center">
+          <div class="text-center m-auto mb-20 md:w-1/2 flex justify-center">
+            <h3 class="text-3xl font-bold">
+              Trusted by over 20 companies and Thousand of Learners around the
+              world
+            </h3>
+          </div>
+          <div
+            class="grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-12 lg:gap-20 px-4 sm:px-6 lg:px-8 place-content-center"
+          >
             <div>
-                <h2 class="px-20 font-semibold italic">“Skill rather than just degree”</h2>
+              <img src="./assets/logos/DREAMY J 2 1.png" alt="" />
             </div>
-            <div class="flex flex-row gap-10">
-                <img src="./assets/img/Ellipse 2.png" alt="">
-                <div>
-                    <h3>Prof. Isah Ali Pantami</h3>
-                    <p>Minister of digital and communication</p>
-                </div>
+            <div>
+              <img
+                src="./assets/logos/Untitled50_20230105063916 1.png"
+                alt=""
+              />
             </div>
+            <div>
+              <img
+                src="./assets/logos/Untitled139_20230808171903 1.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/logos/Untitled122_20230719132039 1.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/logos/Black White Elegant Monogram Initial Name Logo 1.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img src="./assets/logos/dd 1.png" alt="" />
+            </div>
+            <div>
+              <img
+                src="./assets/logos/Untitled12_20231206222211 1.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-    </section>
-    <section>
+      </section>
+      <section>
+        <div
+          class="bg-[#137ff3] py-10 px-20 flex items-start flex-col gap-10 place-content-center"
+        >
+          <div>
+            <h2 class="px-20 font-semibold italic">
+              “Skill rather than just degree”
+            </h2>
+          </div>
+          <div class="flex flex-row gap-10">
+            <img src="./assets/img/Ellipse 2.png" alt="" />
+            <div>
+              <h3>Prof. Isah Ali Pantami</h3>
+              <p>Minister of digital and communication</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
         <div class="py-20 w-full">
-            <div class="text-center m-auto mb-20 md:w-1/2   flex justify-center">
-                <h3 class="text-4xl font-bold">Our vision</h3>
-            </div>
-                <p class="text-xl w-full text-justify px-20 m-auto mb-20   flex justify-center ">Our vision is to empower individuals to thrive in adynamic and ever-evolving professional land scape by
-                providing accessible,high-quality skill development opportunities.To be the preferred online learning
-                destination, recognized for our commitment to excellence, inclusivity, and cutting-edge educational 
-                experiences</p>
+          <div class="text-center m-auto mb-20 md:w-1/2 flex justify-center">
+            <h3 class="text-4xl font-bold">Our vision</h3>
+          </div>
+          <p
+            class="text-xl w-full text-justify px-20 m-auto mb-20 flex justify-center"
+          >
+            Our vision is to empower individuals to thrive in adynamic and
+            ever-evolving professional land scape by providing
+            accessible,high-quality skill development opportunities.To be the
+            preferred online learning destination, recognized for our commitment
+            to excellence, inclusivity, and cutting-edge educational experiences
+          </p>
 
-                <div class="text-center m-auto mb-8 md:w-1/2   flex justify-center">
-                    <h3 class="text-3xl font-bold">Become a Mentor</h3>
-                </div>
-            <div class="text-center m-auto gap-8 flex flex-col md:w-1/2   justify-center">
-                <p class="text-2xl sm:px-10">Mentors from around the world mentor miliion of learner. </p>
-                <p class="text-2xl sm:px-10">We provide mentor with all the tool to teach what you love</p>
-                <div>
-                    <button class="bg-[#137ff3] py-5 px-8 rounded-xl text-2xl text-white sm:py-3 sm:px-5">Be a mentor</button>
-                </div>
-                
+          <div class="text-center m-auto mb-8 md:w-1/2 flex justify-center">
+            <h3 class="text-3xl font-bold">Become a Mentor</h3>
+          </div>
+          <div
+            class="text-center m-auto gap-8 flex flex-col md:w-1/2 justify-center"
+          >
+            <p class="text-2xl sm:px-10">
+              Mentors from around the world mentor miliion of learner.
+            </p>
+            <p class="text-2xl sm:px-10">
+              We provide mentor with all the tool to teach what you love
+            </p>
+            <div>
+              <button
+                class="bg-[#137ff3] py-5 px-8 rounded-xl text-2xl text-white sm:py-3 sm:px-5"
+              >
+                Be a mentor
+              </button>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
+      <footer class="bg-[#0865A42B]">
+        <section class="flex flex-col items-center w-full">
+          <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 w-full justify-center">
+            <div class="flex justify-center bg-slate-500">
+                <div>
 
-   </main>
+                    <h2 class="text-xl font-semibold mb-5">Learnobox</h2>
+                    <ul>
+                        <li>Home</li>
+                        <li>Courses</li>
+                        <li>About us</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-center"><div>
+                <h2 class="text-xl font-semibold mb-5">Resource</h2>
+                <ul>
+                    <li>Articles</li>
+                    <li>Docs</li>
+                    <li>Project</li>
+                    <li>Videos</li>
+                    <li>Test</li>
+                    <li>Mentor</li>
+                </ul>
+            </div></div>
+            <div class="flex justify-center">
+                <div>
+                    <h2 class="text-xl font-semibold mb-5">Plan</h2>
+                    <ul>
+                        <li>For individuals</li>
+                        <li>For Students</li>
+                        <li>For Graduates</li>
+                        <li>For Teams</li>
+                        <li>Discounts</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div>
+                    <h2 class="text-xl font-semibold mb-5">Community</h2>
+                    <ul>
+                        <li>Learners</li>
+                        <li>Partners</li>
+                        <li>Mentors</li>
+                        
+                    </ul> 
+                </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="flex flex-col items-center gap-4">
+            <h2 class="text-2xl font-bold">LEARNOBOX</h2>
+            <div class="flex flex-row place-content-center gap-0">
+              <svg
+                class="h-10"
+                height="200px"
+                width="200px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                xml:space="preserve"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <circle
+                    style="fill: #171717"
+                    cx="256"
+                    cy="256"
+                    r="256"
+                  ></circle>
+                  <path
+                    style="fill: #000000"
+                    d="M374.71,132.922c-30.587,3.872-62.479,3.737-94.575,0.681 c-44.822-3.448-110.33-24.135-134.465,17.239c-38.772,66.236-19.649,151.035-10.614,226.078l134.737,134.708 c130.388-6.923,234.886-111.407,241.831-241.79L374.71,132.922z"
+                  ></path>
+                  <g>
+                    <path
+                      style="fill: #ffffff"
+                      d="M315.227,109.468H196.772c-48.14,0-87.304,39.164-87.304,87.304v118.455 c0,48.138,39.164,87.305,87.305,87.305h118.455c48.138,0,87.305-39.165,87.305-87.305V196.772 C402.532,148.632,363.367,109.468,315.227,109.468L315.227,109.468z M373.05,315.228c0,31.934-25.888,57.822-57.822,57.822H196.773 c-31.934,0-57.822-25.888-57.822-57.822V196.773c0-31.934,25.888-57.823,57.822-57.823h118.455 c31.934,0,57.822,25.89,57.822,57.823V315.228z"
+                    ></path>
+                    <path
+                      style="fill: #ffffff"
+                      d="M256,180.202c-41.794,0-75.798,34.004-75.798,75.798c0,41.791,34.004,75.795,75.798,75.795 s75.795-34.001,75.795-75.795S297.794,180.202,256,180.202L256,180.202z M256,302.313c-25.579,0-46.316-20.733-46.316-46.313 s20.737-46.316,46.316-46.316s46.313,20.735,46.313,46.316C302.313,281.579,281.579,302.313,256,302.313L256,302.313z"
+                    ></path>
+                  </g>
+                  <g>
+                    <path
+                      style="fill: #d1d1d1"
+                      d="M350.103,180.774c0,10.03-8.132,18.163-18.163,18.163c-10.03,0-18.163-8.133-18.163-18.163 c0-10.031,8.133-18.163,18.163-18.163C341.973,162.611,350.103,170.741,350.103,180.774L350.103,180.774z"
+                    ></path>
+                    <path
+                      style="fill: #d1d1d1"
+                      d="M315.228,109.468h-59.802v29.482h59.802c31.934,0,57.822,25.89,57.822,57.823v118.455 c0,31.934-25.888,57.822-57.822,57.822h-59.802v29.482h59.802c48.138,0,87.304-39.165,87.304-87.305V196.772 C402.532,148.632,363.367,109.468,315.228,109.468z"
+                    ></path>
+                    <path
+                      style="fill: #d1d1d1"
+                      d="M256,180.202c-0.193,0-0.381,0.014-0.574,0.014v29.482c0.191-0.002,0.381-0.014,0.574-0.014 c25.579,0,46.313,20.735,46.313,46.316c0,25.579-20.733,46.313-46.313,46.313c-0.193,0-0.383-0.012-0.574-0.014v29.482 c0.193,0.002,0.381,0.014,0.574,0.014c41.794,0,75.795-34.002,75.795-75.795C331.795,214.206,297.794,180.202,256,180.202z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <svg
+                class="h-10 "
+                fill="#000000"
+                height="200px"
+                width="200px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="-143 145 512 512"
+                xml:space="preserve"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9 V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7 C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6 c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z "
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                class="h-10"
+                fill="#000000"
+                height="200px"
+                width="200px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="-143 145 512 512"
+                xml:space="preserve"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M215.2,361.2 c0.1,2.2,0.1,4.5,0.1,6.8c0,69.5-52.9,149.7-149.7,149.7c-29.7,0-57.4-8.7-80.6-23.6c4.1,0.5,8.3,0.7,12.6,0.7 c24.6,0,47.3-8.4,65.3-22.5c-23-0.4-42.5-15.6-49.1-36.5c3.2,0.6,6.5,0.9,9.9,0.9c4.8,0,9.5-0.6,13.9-1.9 C13.5,430-4.6,408.7-4.6,383.2v-0.6c7.1,3.9,15.2,6.3,23.8,6.6c-14.1-9.4-23.4-25.6-23.4-43.8c0-9.6,2.6-18.7,7.1-26.5 c26,31.9,64.7,52.8,108.4,55c-0.9-3.8-1.4-7.8-1.4-12c0-29,23.6-52.6,52.6-52.6c15.1,0,28.8,6.4,38.4,16.6 c12-2.4,23.2-6.7,33.4-12.8c-3.9,12.3-12.3,22.6-23.1,29.1c10.6-1.3,20.8-4.1,30.2-8.3C234.4,344.5,225.5,353.7,215.2,361.2z"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                class="h-10"
+                fill="#000000"
+                height="200px"
+                width="200px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="-143 145 512 512"
+                xml:space="preserve"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3 v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2 c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <p>Learnobox@gmail.com</p>
+          </div>
+        </section>
+      </footer>
+    </main>
 
-
-
-
-   <script src="js/index.js"></script>
-</body>
+    <script src="js/index.js"></script>
+  </body>
 </html>
